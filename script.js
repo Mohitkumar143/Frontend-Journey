@@ -36,5 +36,21 @@ else{
 
 let btn = document.getElementById("submit-btn");
 btn.addEventListener("click", function() {
-    document.body.style.backgroundColor = "lightblue";  
+    alert("Submitted!")
 });
+    //     document.body.style.backgroundColor = "lightblue";  
+// 
+let form = document.getElementById("contact-form");
+form.addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent form submission
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    let message = document.getElementById("message").value; 
+    if(name === "" || email === "" || message === ""){
+        alert("Please fill in all fields.");
+    }else{
+        alert("Thank you for contacting me, " + name + "!");
+    }
+   
+});
+ 
