@@ -31,3 +31,10 @@ if(course ==="BCA"){
 else{
     console.log("Mohit is not a BCA student");
 }
+// let title = document.getElementById("title");
+// title.textContent = "Welcome to My Portfolio";
+
+let btn = document.getElementById("submit-btn");
+btn.addEventListener("click", function() {
+    document.body.style.backgroundColor = "lightblue";  
+});
